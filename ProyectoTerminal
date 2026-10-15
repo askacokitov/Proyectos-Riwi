@@ -1,0 +1,64 @@
+cohorte8@RIWI-0827:~$ pwd
+/home/cohorte8
+cohorte8@RIWI-0827:~$ ls
+Desktop  Documents  Downloads  Home  ProyectoCoders  Public  Screenshots  Templates  Videos  carpetaPrueba  home  snap  vscode.deb  wget-log  wget-log.1
+cohorte8@RIWI-0827:~$ ls -l
+total 56
+drwxr-xr-x 2 cohorte8 cohorte8 4096 Oct 13 18:59 Desktop
+drwxr-xr-x 3 cohorte8 cohorte8 4096 Oct 14 12:58 Documents
+drwxr-xr-x 2 cohorte8 cohorte8 4096 Oct 13 17:47 Downloads
+drwxr-xr-x 2 cohorte8 cohorte8 4096 Oct 13 17:44 Home
+drwxrwxr-x 8 cohorte8 cohorte8 4096 Oct 13 19:34 ProyectoCoders
+drwxr-xr-x 2 cohorte8 cohorte8 4096 Sep 17 09:05 Public
+drwxrwxr-x 2 cohorte8 cohorte8 4096 Oct 14 08:31 Screenshots
+drwxr-xr-x 2 cohorte8 cohorte8 4096 Sep 17 09:05 Templates
+drwxr-xr-x 2 cohorte8 cohorte8 4096 Sep 17 09:05 Videos
+drwxrwxr-x 3 cohorte8 cohorte8 4096 Oct 14 14:27 carpetaPrueba
+drwxr-xr-x 2 cohorte8 cohorte8 4096 Oct 13 17:47 home
+drwx------ 7 cohorte8 cohorte8 4096 Oct 14 08:53 snap
+-rw-rw-r-- 1 cohorte8 cohorte8    0 Oct 14 08:51 vscode.deb
+-rw-rw-r-- 1 cohorte8 cohorte8  366 Oct 14 08:51 wget-log
+-rw-rw-r-- 1 cohorte8 cohorte8  366 Oct 14 08:51 wget-log.1
+cohorte8@RIWI-0827:~$ ls -a
+.   .bash_history  .bashrc  .config   .dotnet  .local    .ssh     .vscode-shared  Desktop    Downloads  ProyectoCoders  Screenshots  Videos         home  vscode.deb  wget-log.1
+..  .bash_logout   .cache   .copilot  .gnupg   .profile  .vscode  .wget-hsts      Documents  Home       Public          Templates    carpetaPrueba  snap  wget-log
+cohorte8@RIWI-0827:~$ cd cd Documents/
+bash: cd: too many arguments
+cohorte8@RIWI-0827:~$ cd Documents/
+cohorte8@RIWI-0827:~/Documents$ mkdir ProyectoTerminal
+cohorte8@RIWI-0827:~/Documents$ cd ProyectoTerminal/
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal$ mkdir documentos imagenes scripts
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal$ ls
+documentos  imagenes  scripts
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal$ cd documentos/
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/documentos$ touch notas.txt tareas.txt
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/documentos$ ls
+notas.txt  tareas.txt
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/documentos$ cd ..
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal$ cd imagenes/
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/imagenes$ touch logo.png
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/imagenes$ mv logo.png ../documentos/
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/imagenes$ ls
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/imagenes$ cd ..
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal$ cd documentos/
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/documentos$ ls
+logo.png  notas.txt  tareas.txt
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/documentos$ cp notas.txt notas_backup.txt
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/documentos$ ls
+logo.png  notas.txt  notas_backup.txt  tareas.txt
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/documentos$ mv tareas.txt pendientes.txt
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/documentos$ ls
+logo.png  notas.txt  notas_backup.txt  pendientes.txt
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/documentos$ rm -r logo.png 
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/documentos$ ls
+notas.txt  notas_backup.txt  pendientes.txt
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal/documentos$ cd ..
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal$ rm imagenes/
+rm: cannot remove 'imagenes/': Is a directory
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal$ rm -r imagenes/
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal$ ls
+documentos  scripts
+cohorte8@RIWI-0827:~/Documents/ProyectoTerminal$ cd ..
+cohorte8@RIWI-0827:~/Documents$ cd ~
+cohorte8@RIWI-0827:~$ 
+
