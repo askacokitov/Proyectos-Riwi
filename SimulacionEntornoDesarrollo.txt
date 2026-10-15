@@ -1,0 +1,68 @@
+cohorte8@RIWI-0827:~$ mkdir carpetaPrueba
+cohorte8@RIWI-0827:~$ cd carpetaPrueba/
+cohorte8@RIWI-0827:~/carpetaPrueba$ mkdir ProyectoCoders
+cohorte8@RIWI-0827:~/carpetaPrueba$ cd ProyectoCoders/
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders$ mkdir src assets docs tests config backup
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders$ ls
+assets  backup  config  docs  src  tests
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders$ cd src/
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ touch app.txt database.txt functions.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ cd ..
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders$ cd docs/
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/docs$ touch README.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/docs$ nano README.txt 
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/docs$ cat README.txt 
+Configurar la estructura de carpetas y archivos necesaria para organizar los recursos del proyecto
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/docs$ cd ..
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders$ cd config/
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/config$ touch settings.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/config$ ls
+settings.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/config$ nano settings.txt 
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/config$ cat settings.txt 
+Cambio de archivos
+Reenombrar
+Abrir
+Eliminar
+Abrir con..
+Copiar
+Pegar
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/config$ cp settings.txt ../backup/
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/config$ cd ..
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders$ cd backup/
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/backup$ ls
+settings.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/backup$ cd ..
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders$ src/
+bash: src/: Is a directory
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders$ cd src/
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ ls
+app.txt  database.txt  functions.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ mkdir database
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ ls
+app.txt  database  database.txt  functions.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ mv database.txt ../database/
+mv: cannot move 'database.txt' to '../database/': Not a directory
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ ls
+app.txt  database  database.txt  functions.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ mv database.txt ../database/
+mv: cannot move 'database.txt' to '../database/': Not a directory
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ mv database.txt database
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ ls
+app.txt  database  functions.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ cp functions.txt ../backup/
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ ls
+app.txt  database  functions.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ mv app.txt main.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ ls
+database  functions.txt  main.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ rm functions.txt 
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ ls
+database  main.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/src$ cd ..
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders$ cd backup/
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/backup$ ls
+functions.txt  settings.txt
+cohorte8@RIWI-0827:~/carpetaPrueba/ProyectoCoders/backup$ 
+
+
